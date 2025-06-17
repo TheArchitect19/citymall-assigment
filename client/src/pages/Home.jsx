@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import API from '../services/api';
+import API from '../api';
 import MemeCard from '../components/MemeCard';
 export default function Home({ socket }) {
   const [memes, setMemes] = useState([]);

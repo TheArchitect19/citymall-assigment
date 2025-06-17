@@ -12,4 +12,9 @@ app.use('/memes', memeRoutes);
 app.use('/memes', bidRoutes);
 app.use('/memes', voteRoutes);
 app.use('/memes', aiRoutes);
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the Meme Marketplace API');
+}
+);
 module.exports = app;
